@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b847d909b83bb348b5f98abd2ef9b1f, type: 3}
+  m_Name: Button
+  m_EditorClassIdentifier: 
+  itemName: Button
+  displayName: 0
+  message:
+  - triggersEvent: 0
+    eventObject: 
+    sentences:
+    - I think it's supposed to be a button...
+    hasResponse: 1
+    responses:
+    - next: 1
+      reply: Push it!
+    - next: -1
+      reply: Ok, I guess.
+  - triggersEvent: 1
+    eventObject: Double Doors
+    sentences:
+    - '*Click* '
+    - You pushed it!
+    hasResponse: 0
+    responses: []
